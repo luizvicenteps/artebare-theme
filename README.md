@@ -1,0 +1,1 @@
+# artebare-theme for wordpress
