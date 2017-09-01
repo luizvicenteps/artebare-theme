@@ -28,10 +28,13 @@
             </ul>
           </div>
           <div class="header_top_right">
-            <form action="#" class="search_form">
-              <input type="text" placeholder="Text to Search">
-              <input type="submit" value="">
-            </form>
+  
+          <?php get_search_form(); ?>
+          <!--           <form action="#" class="search_form">
+            <input type="text" placeholder="Text to Search">
+            <input type="submit" value="">
+          </form> -->
+
           </div>
         </div>
         <div class="header_bottom">

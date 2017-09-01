@@ -1,6 +1,6 @@
 <li>
   <div class="media wow fadeInDown">
-    <a href="#" class="media-left">
+    <a href="<?php the_permalink(); ?>" class="media-left">
       <?php the_post_thumbnail(array(112,112), array('class' => 'img-responsive'));?>
     </a>
     <div class="media-body">

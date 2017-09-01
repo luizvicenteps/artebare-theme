@@ -1,8 +1,8 @@
-<ul class="fashion_catgnav">
 	<li>
     	<div class="catgimg2_container">
     		<a href="<?php the_permalink(); ?>">
-    			<img alt="" src="<?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>">
+    			<!-- <img alt="" src="<?php //the_post_thumbnail('large', array('class' => 'img-responsive')); ?>"> -->
+                <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>"
 			</a>
 		</div>
     	<h2 class="catg_titile">
@@ -20,6 +20,3 @@
 		</div>
         <p> <?php the_excerpt(); ?></p>
     </li>
-</ul>
-
-

@@ -48,15 +48,17 @@
             <h2> <span class="bold_line"><span></span></span> <span class="solid_line"></span> <a class="title_text" href="#">Música</a> </h2>
 
 
-              <!-- DESTAQUE -->
+              <!-- DESTAQUE MÚSICA-->
               <div class="business_category_left wow fadeInDown">
+              	<ul class="fashion_catgnav">
                   <?php 
                     $args = array(
                       'post_type'     =>  'post',
                       'posts_per_page'  =>  1,
                       //'category__not_in'  =>  array(7),
-                      'category__in'    =>  array(4)
                       //'offset'      =>  0
+                      //'category__in'    =>  array(12),
+                      'category_name' => 'musica'
                     );
                     $destaque = new WP_Query($args);
 
@@ -68,6 +70,7 @@
                       wp_reset_postdata();
                       endif;
                   ?>
+              	</ul>
               </div>
             <div class="business_category_right wow fadeInDown">
               <ul class="small_catg">
@@ -76,7 +79,8 @@
                       'post_type'     =>  'post',
                       'posts_per_page'  =>  3,
                       //'category__not_in'  =>  array(7),
-                      'category__in'    =>  array(4),
+                      //'category__in'    =>  array(12),
+                      'category_name' => 'musica',
                       'offset'      =>  1
                     );
                     $secundaria = new WP_Query($args);
