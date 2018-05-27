@@ -1,6 +1,5 @@
 <?php get_header(); ?>
-    <div id="container">
-//nano 
+    <div class="container" id="container">
 
   <section id="mainContent">
     <div class="content_bottom">

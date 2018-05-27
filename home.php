@@ -39,7 +39,9 @@
         </div>
       </div>
     </div>
-    
+</div>
+    <!-- Conteiner content_bottom -->
+    <div class="container" >
     <div class="content_bottom">
       <div class="col-lg-8 col-md-8">
         <!-- MÚSICA -->

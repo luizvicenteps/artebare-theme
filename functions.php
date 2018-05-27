@@ -142,4 +142,6 @@ function bloglite_breadcrumb() {
     elseif (is_search()) { echo "<li>Resultados da pesquisa"; echo'</li>'; }
     //echo '</ul>';
 }
+//Função para uso do logo do personalizador de tema
+add_theme_support( 'custom-logo' );
 ?>

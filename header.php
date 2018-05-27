@@ -17,7 +17,8 @@
   <div id="status">&nbsp;</div>
 </div>
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-<div class="container">
+<!-- <div class="container">  -->
+<div>
   <header id="header">
     <div class="row">
       <div class="col-lg-12 col-md-12">
@@ -37,9 +38,22 @@
 
           </div>
         </div>
-        <div class="header_bottom">
-          <div class="header_bottom_left"><a class="logo" href="index.html">mag<strong>Express</strong> <span>A Pro Magazine Template</span></a></div>
-          <div class="header_bottom_right"><a href="#"><img src="<?php echo get_template_directory_uri() . "/assets/images/"; ?>addbanner_728x90_V1.jpg" alt=""></a></div>
+
+        <div class="container">
+          <div class="header_bottom">
+            <div class="header_bottom_left">
+                <a class="logo" href="/">
+                      <?php 
+                      $custom_logo_id = get_theme_mod( 'custom_logo' );
+                      $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                      //echo $logo[0];
+                      ?>
+                  <img src="<?php echo $logo[0] ?>" alt="">
+              </a>
+              
+                </div>
+        <div class="header_bottom_right"><a href="#"><img src="<?php echo get_template_directory_uri() . "/assets/images/"; ?>addbanner_728x90_V1.jpg" alt=""></a></div>
+          </div>
         </div>
       </div>
     </div>
@@ -52,7 +66,7 @@
         </div>
 <!--         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav custom_nav"> -->
-
+          <div class="container">
             <?php 
             $args = array(
               'menu_id' => 'navbar',
@@ -65,6 +79,7 @@
 
                );
             wp_nav_menu( $args ); ?>
+          </div>
             <!-- <li class=""><a href="index.html">Home</a></li>
             <li class="dropdown"> <a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">Archives</a>
               <ul class="dropdown-menu" role="menu">

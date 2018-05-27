@@ -1,4 +1,5 @@
   </section> <!-- <section id="mainContent"> -->
+  </div> <!-- FECHAR DIV CONTAINER PRINCIPAL -->
 <footer id="footer">
   <div class="footer_top">
     <div class="container">
@@ -65,7 +66,7 @@
 <script src="assets/js/slick.min.js"></script> 
 <script src="assets/js/custom.js"></script> -->
 
-</div> <!-- FECHAR DIV CONTAINER PRINCIPAL -->
+
 <?php wp_footer(); ?>
 </body>
 </html>

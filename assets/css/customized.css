@@ -1,5 +1,34 @@
+body {
+    background-color: #080808;
+}
+#mainContent {
+    background-color: transparent;
+}
+.container {
+    width: 1200px;
+}
+.content_bottom_left {
+    background-color: transparent;
+}
+.navbar-default {
+    background-color: #FF5900;
+    border-color: #FF5900;
+}
 ul.sub-menu > .menu-item a:hover, {
-background-color:#fff; color:#ffa500; border-color:#FFAE00; padding-left:20px
+    background-color:#F9EBD4;
+    color:#FF5900;
+    border-color:#FF5900;
+    padding-left:20px
 }
 
-.sub-menu > li > a:hover, .sub-menu > li > a:focus{background-color:#fff; color:#ffa500; border-color:#FFAE00; padding-left:20px}
+.sub-menu > li > a:hover, 
+.sub-menu > li > a:focus{
+    background-color:#F9EBD4;
+    color:#FF5900;
+    border-color:#FF5900;
+    padding-left:20px
+}
+
+.custom_nav {
+    border: none;
+}
